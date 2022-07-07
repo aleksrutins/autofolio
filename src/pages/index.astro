@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import config from '../../config';
+import { fetchData } from '../fetchData';
+const data = await fetchData();
+---
+<Layout title={data.user.name}>
+	<div class="w-screen flex flex-col">
+		<div class="h-screen bg-gray-900 text-white flex flex-row">
+			
+		</div>
+	</div>
+</Layout>
